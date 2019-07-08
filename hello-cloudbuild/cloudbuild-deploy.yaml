@@ -39,3 +39,8 @@ steps:
       - --set
       - container.tag=${COMMIT_SHA}
       - ./k8s/demo
+
+substitutions:
+    _CLOUDSDK_CORE_PROJECT: eng-ridge-246118 # https://console.cloud.google.com/iam-admin/settings/project?project=eng-ridge-246118
+    _CLOUDSDK_COMPUTE_ZONE: us-central1-a # https://console.cloud.google.com/kubernetes/list?project=eng-ridge-246118
+    _CLOUDSDK_CONTAINER_CLUSTER: your-first-cluster-1
